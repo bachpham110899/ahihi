@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&display=swap');
+
+body
+{
+	background: #FFC4C4;
+			 color: #020202; 
+	font-family:"Montserrat", Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; 
+	font-size: 18px;
+	margin:0
+		
+}
+h1,h2,h3,h4,h5,h6{ margin-top: 0; margin-bottom: 5px}
+h1.tentruong
+{
+	font-size: 5vw;
+	color: #DC730B
+}
+@media (min-width:1000px)
+{
+		h1.tentruong
+	{
+		font-size: 3vw;
+
+	}
+}
+h2
+{font-size: 40px;
+	 color: #575757
+}
+h3
+{font-size: 42px;
+	font-family: "Moon Dance", cursive;
+	 color: #FB0C10
+}
+.container
+{
+	width: 80%; border:medium ; margin: auto
+}
+*{box-sizing: border-box}/*day vien va bo le vao trong cho he thong luoi*/
+.col-1 {width:  8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+[class*="col-"]
+{
+	padding: 15px;
+	border: 1px 
+}
+.row{ display: flex;
+flex-wrap: wrap}
+
+@media (min-width:600px)
+{.col-md-1 {width:  8.33%}
+.col-md-2 {width: 16.66%}
+.col-md-3 {width: 25%}
+.col-md-4 {width: 33.33%}
+.col-md-5 {width: 41.66%}
+.col-md-6 {width: 50%}
+.col-md-7 {width: 58.33%}
+.col-md-8 {width: 66.66%}
+.col-md-9 {width: 75%}
+.col-md-10 {width: 83.33%}
+.col-md-11 {width: 91.66%}
+.col-md-12 {width: 100%}}
+
+@media (min-width:1000px)
+{.col-lg-1 {width:  8.33%}
+.col-lg-2 {width: 16.66%}
+.col-lg-3 {width: 25%}
+.col-lg-4 {width: 33.33%}
+.col-lg-5 {width: 41.66%}
+.col-lg-6 {width: 50%}
+.col-lg-7 {width: 58.33%}
+.col-lg-8 {width: 66.66%}
+.col-lg-9 {width: 75%}
+.col-lg-10 {width: 83.33%}
+.col-lg-11 {width: 91.66%}
+.col-lg-12 {width: 100%}}
+
+.align-items-end { align-items: flex-start} /*sat tren*/
+.align-items-center { align-items: center} /* o giua chieu doc*/
+.align-items-end { align-items: flex-end}/*sat chan*/
+.justify-start {justify-content: flex-start}
+.img-100{width: 100%; height: auto}
+/* style cho menu*/
+.btn-menu{position: absolute; right: 0; top: 0;
+cursor: pointer;
+font-weith: bold;
+font-size: 20px;
+background-color: #2334F1;
+border: none;
+z-index:2/*cho chỉ số lớp layer lớn để button 3 gạch nằm trên cái menu*/
+}
+ul.menu
+{
+	margin: 0;
+	margin-top: 15px;
+	padding: 0;
+	list-style: none;/*bỏ chấm đầu dòng*/
+	display: none
+}
+ul.menu li
+{position: relative}
+ul.menu li a
+{text-decoration: none;/*bỏ gạch chân*/
+	background-color: #F7EE02;
+	color: #000000;
+	display: block;
+	padding: 10px;
+	margin: 1px
+}
+@media(min-width: 1000px)
+{
+	.btn-menu{display: none}
+	ul.menu{
+		display: flex !important;/*xuất hiện lại menu đang ẩn và cho các list nằm cạnh nhau*/
+		margin-top: 0}
+
+
+}
+
+.text-center{text-align: center}
+.text-left{text-align: left}
+.text-right{text-align: right}
+.text-justify{text-align: justify}
+.bg-primary {	background-color:coral }
+.text-primary{	color:coral}
+.bg-dark-10{ background-color: rgba(0,0,0,0.1)}
+.bg-dark-20{ background-color: rgba(0,0,0,0.2)}
+.bg-dark-30{ background-color: rgba(0,0,0,0.3)}
+.bg-dark-40{ background-color: rgba(0,0,0,0.4)}
+.text-light{ color: white}
+
+.form-input
+{width:100%;
+border: 1px solid #ddd;
+padding: 10px;
+border-radius: 8px;
+margin-bottom: 10px}
+
+.btn-primary
+{background-color: tomato;
+	color: white;
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer}
+.btn-primary:hover{
+	background-color: aqua;
+}
+.btn-secondary
+{background-color: yellowgreen;
+	color: white;
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer}
+.btn-secondary:hover{
+	background-color: rebeccapurple;
+}
